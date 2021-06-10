@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\fullname}{Kian Bazarjani}
+\newcommand{\phonenumber}{613-501-6097}
+\newcommand{\emailaddress}{bazarjani.kian@gmail.com}
+
+\newcommand{\github}{BazzaDEV}
+\newcommand{\githublink}{https://github.com/\github}
+
+\newcommand{\linkedin}{kianbazza}
+\newcommand{\linkedinlink}{https://linkedin.com/in/\linkedin}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape \fullname} \\ \vspace{5pt}
+    \small 
+    \faPhone \space \phonenumber \space $|$
+    \faPaperPlane \space \href{mailto:bazarjani.kian@gmail.com}{\emailaddress} $|$ 
+    \faGithub \space \href{\githublink}{\github} $|$
+    \faLinkedin \space \href{\linkedinlink}{\linkedin}
+   
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Ottawa}{Ottawa, ON}
+      {BSc with Honours in Computer Science, Data Science Option}{Sep. 2018 -- Dec 2022}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{\githublink/DeltaCore}{DeltaCore}} $|$ \emph{\href{https://papermc.io/}{PaperAPI}, Java, Maven, Git}}{May 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Plugin for Minecraft server owners, written in Java}
+            \resumeItem{Extremely lightweight thanks to asynchronous database loading and dynamic data caching}
+            \resumeItem{Provides a large number of custom commands and functionality for players}
+            \resumeItem{Easy player management for admins through a custom in-game GUI}
+            \resumeItem{Can choose between flatfile and remote storage options, including Json, H2, MongoDB, and SQL}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{\githublink/SimpleMenus}{Simple Menus}} $|$ \emph{Java, Commons Lang, Maven, Git}}{April 2021 -- Present}
+          \resumeItemListStart
+           \resumeItem{Lightweight API for creating menus in command line interfaces, written in Java}
+            \resumeItem{Easy menu creation by defining header style, menu title, menu options and their associated actions}
+            \resumeItem{Full navigation support allows menu linking and backwards navigation}
+            \resumeItem{Support for screen clearing, cursor relocation and colors using ANSI escape codes}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Service Novigrad} $|$ \emph{AndroidX, Java, Gradle, CircleCI}}{Sept. 2020 -- Dec. 2020}
+          \resumeItemListStart
+            \resumeItem{Android application for a district to provide services to its residents}
+            \resumeItem{Provides built-in services such as driver's license, photo ID, and health card}
+            \resumeItem{Uses CircleCI for automated building and deployment of artifacts via GitHub}
+            \resumeItem{Implements JUnit for automated testing prior to build deployment}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Hydroponics Design Leader}{Jan. 2019 -- Aug. 2019}
+      {University of Ottawa}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem {Designed a greenhouse shed for Aboriginal community in Quebec with a custom-made hydroponics system}
+        \resumeItem {Worked with aboriginal community members to ensure the project met their needs \& requirements}
+        \resumeItem {Collaborated in small group to design structural and electronics system}
+        \resumeItem {Hand-delivered and setup near community town hall in Summer 2019}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Camp Counsellor}{June 2018 -- Sept 2019}
+      {Ottawa Athletic Club}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Communicate with managers to set up campus computers used on campus}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Taekwondo Instructor}{March 2013 -- June 2018}
+      {Saroughi Martial Arts}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem {ITF Black Belt 1st dan, awarded by Senior Master Sam Saroughi, 8th dan}
+        \resumeItem {Taught large classes of all ages; 3 years teaching experience}
+        \resumeItem {Supervision of official belt testings}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, SQL (Postgres), C, \LaTeX, HTML/CSS, R, Dart, Go, Scheme, Prolog} \\
+     \textbf{Frameworks}{: Flutter, JUnit} \\
+     \textbf{Developer Tools}{: Git, IntelliJ IDEA, Maven, Gradle, Android Studio, PyCharm, VS Code, R Studio} \\
+     \textbf{Libraries}{: AndroidX, Matplotlib, Gson, Apache Commons}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+\section{Relevant Courses}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Computer Science}{: Introductory Java \& C courses $\cdot$ Data Structures \& Algorithms $\cdot$ Databases I $\cdot$ Intro to M.L.} \\
+     \textbf{Math}{: Calculus I, II, III $\cdot$ Intro to Linear Algebra $\cdot$ ODE \& Numerical Methods $\cdot$ Probability \& Statistics} \\
+    }}
+ \end{itemize}
+
+
+\end{document}
