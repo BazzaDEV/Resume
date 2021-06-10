@@ -2,7 +2,7 @@
 
 ## Build
 
-1. Build `main.pdf`.
+1. Build `main.tex`, which will produce `main.pdf`.
 2. If on Windows, run `deploy-to-dropbox.cmd`. If on macOS, run run `deploy-to-dropbox.sh`.
 
 What this script does:
