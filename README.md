@@ -10,4 +10,4 @@ What this script does:
 - Replace the existing `resume.pdf` file in the `/Dropbox/shared files/` folder with the new one
 - Delete the copy created in the local directory.
 
-3. Navigate over to [go.bazza.dev/resume](https://go.bazza.dev/resume) and check that the resume has updated.
+3. Navigate over to https://go.bazza.dev/resume and check that the resume has updated.
