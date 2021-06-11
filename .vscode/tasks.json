@@ -6,9 +6,9 @@
         {
             "label": "Deploy to Dropbox",
             "type": "shell",
-            "command": "/.vscode/deploy-to-dropbox.sh",
-            "windows":{
-                "command": ".vscode\\deploy-to-dropbox.cmd",
+            "command": "./.vscode/deploy-to-dropbox.command",
+            "windows": {
+                "command": ".vscode\\deploy-to-dropbox.cmd"
             },
             "problemMatcher": [],
             "group": {
