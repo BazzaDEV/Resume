@@ -21,6 +21,10 @@
 \usepackage{fontawesome}
 \input{glyphtounicode}
 
+\usepackage{graphicx} 
+\usepackage{eso-pic} 
+\graphicspath{ {./images/} }
+
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -125,6 +129,9 @@
 
 \begin{document}
 
+\AddToShipoutPicture*
+    {\put(520,725){\includegraphics[width=1.8cm,height=1.8cm]{qr}}}
+
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 %   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
@@ -134,11 +141,11 @@
 \begin{center}
     \textbf{\Huge \fullname} \\ \vspace{5pt}
     \small
-    \faPaperPlane \space \href{mailto:\emailaddress}{\emailaddress} $|$ 
     \faPhone \space \phonenumber \space $|$
-    \faTerminal \space \href{\websitelink}{\website} $|$
-    \faGithub \space \href{\githublink}{\github} $|$
-    \faLinkedin \space \href{\linkedinlink}{\linkedin}
+    \faPaperPlane \space \href{mailto:\emailaddress}{\emailaddress} $|$ 
+    % \faTerminal \space \href{\websitelink}{\website} $|$
+    \faLinkedin \space \href{\linkedinlink}{\linkedin} $|$
+    \faGithub \space \href{\githublink}{\github} 
    
 \end{center}
 
@@ -170,7 +177,7 @@
       {Department of National Defence}{Ottawa, ON}
       \resumeItemListStart
         \resumeItem {Participated in the successful delivery of multiple projects with a combined budget of \$249 million}
-        \resumeItem {Contributed to the large-scale improvement of intelligence \& security capabilities on highly classified information networks}
+        \resumeItem {Contributed to major improvements of intelligence \& security capabilities on highly classified information networks}
         \resumeItem {Oversaw the maintenance of virtual development environments criticial to project delivery}
         \resumeItem {Produced documentation outlining installation, configuration, and use of project solutions, which led to overall client satisfaction and an increase in employee onboarding efficiency}
       \resumeItemListEnd
@@ -247,6 +254,12 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{Honours Project: Using Machine Learning to Generate Password Lists} (Dr. Carlisle Adams)}{Jan 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Investigated applications of text processing \& image analysis to generate password lists}
+          \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{\githublink/DeltaCore}{DeltaCore}} $|$ \emph{\href{https://papermc.io/}{PaperAPI}, Java, Maven, Git}}{May 2020 -- Present}
           \resumeItemListStart
@@ -262,6 +275,8 @@
             \resumeItem{Facilitates menu creation by defining header style, menu title, and menu options}
             \resumeItem{Full navigation support allows menu linking and backwards navigation}
           \resumeItemListEnd
+
+      
           
     \resumeSubHeadingListEnd
 
@@ -283,8 +298,8 @@
 \section{Relevant Courses}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Computer Science}{: Java/Python/C/C++ $\cdot$ Data Structures \& Algorithms $\cdot$ Databases I, II $\cdot$ Data Science $\cdot$ Cryptography} \\
-     \textbf{Math}{: Calculus I, II, III $\cdot$ Linear Algebra $\cdot$ Discrete Math $\cdot$ Real Analysis $\cdot$ Group Theory $\cdot$ Probability \& Statistics $\cdot$ ODE \& Numerical Methods $\cdot$ Statistical M.L.} \\
+     \textbf{Computer Science}{: Java/Python/C/C++/OCaml $\cdot$ Data Structures $\cdot$ Algorithms $\cdot$ Databases $\cdot$ Data Science $\cdot$ AI/ML} \\
+     \textbf{Math}{: Calculus $\cdot$ Linear Algebra $\cdot$ Discrete Math $\cdot$ Probability $\cdot$ Statistics $\cdot$ Ordinary Differential Equations} \\
     }}
  \end{itemize}
 
@@ -294,7 +309,7 @@
 \section{Other Information}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: English, French (DELF B2 Certified), Farsi} \\
+     \textbf{Languages}{: English, French, Farsi} \\
      \textbf{Interests}{: Grappling, Striking, Hockey, Weightlifting, Cooking, Coding}
     }}
  \end{itemize}
